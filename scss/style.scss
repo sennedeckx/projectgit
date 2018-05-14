@@ -1,9 +1,41 @@
 // Override Bs4 variables and custom mixins
 $theme-colors: (
-        'primary': #009CAB,
+        'main1': #1d24ab,
+        'main2': #ffda10,
         'danger': #F04C25
 );
 
+$main1: #1d24ab !default;
+$main2: #ffda10 !default;
+
+@media  (min-width:768px ) {
+  .content-left {
+    border-right: 3px solid gray;
+  }
+}
+
+.borderbottom {
+  border-bottom: 3px solid gray;
+}
+
+.margin-top{
+  margin-top: 100px;
+}
+
+.imgmargin {
+  margin-left: 25px;
+  margin-top: 25px;
+}
+
+.backgroundcolorMain1 {
+  background-color: $main1;
+}
+
+
+
+a:hover {
+  color: $main2;
+}
 // Link to BS4
 @import "../node_modules/bootstrap/scss/bootstrap";
 
