@@ -31,11 +31,6 @@ $main2: #ffda10 !default;
   background-color: $main1;
 }
 
-
-
-a:hover {
-  color: $main2;
-}
 // Link to BS4
 @import "../node_modules/bootstrap/scss/bootstrap";
 
