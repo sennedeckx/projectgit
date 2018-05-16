@@ -7,43 +7,42 @@
     <link rel="stylesheet" href="css/style.css">
     <title>ALL ABOUT EUROVISION</title>
 </head>
-<body class="bg-main2">
-<header id="top">
+<body class="bg-main">
+<nav class="navbar navbar-expand-lg navbar-light bg-main2">
+    <a class="navbar-brand" href="index.html"><img src="images/logoeurosong.svg" alt="logoeurosong" width="50px"
+                                                   height="50px"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
 
-    <h1>ALL ABOUT EUROVISION
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="#belg">België <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#Winnaars">Winnaars</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#1956">1956</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#Gastlanden">Gastlanden</a>
+            </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-info my-2 my-sm-0" type="submit">Search</button>
+        </form>
+    </div>
+</nav>
+
+<div class="container bg-white bordersextopbot">
+
+    <h1 class="text-center col-12">ALL ABOUT EUROVISION
 
     </h1>
-    <hr class="mb-4">
-    <nav class="navbar navbar-expand-lg navbar-light bg-main2 borders">
-        <a class="navbar-brand" href="index.html">Logo</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item">
-                    <a class="nav-link" href="#belg">België <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#Winnaars">Winnaars</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#1956">1956</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#Gastlanden">Gastlanden</a>
-                </li>
-            </ul>
-            <form class="form-inline my-2 my-lg-0">
-                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-info my-2 my-sm-0" type="submit">Search</button>
-            </form>
-        </div>
-    </nav>
-</header>
-<div class="container bg-white bordersextopbot">
     <div class="row">
         <div class="col-lg-6 col-md-6 ">
             <p><img class="img-fluid" src="images/ESC_HONEY.jpg" alt="Eurovision">
@@ -129,13 +128,13 @@
 
 
 </div>
-<footer class="navbar borders ">
+<footer class="navbar bg-main2 ">
     <a class="btn-outline-info navbar-toggler" href="https://www.thomasmore.be/">one-Pager</a>
 
 
-        <a href="#top">
-            <button class="btn-outline-info navbar-toggler">Top</button>
-        </a>
+    <a href="#top">
+        <button class="btn-outline-info navbar-toggler">Top</button>
+    </a>
     <a class="btn-outline-info navbar-toggler" href="https://www.thomasmore.be/">Thomas More</a>
 
 </footer>

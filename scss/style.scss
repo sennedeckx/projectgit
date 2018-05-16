@@ -11,15 +11,28 @@ $main2: #ffda10 !default;
   border-bottom: 3px solid $main1;
 }
 
-.margin-top{
-  margin-top: 100px;
+.marpad-top0{
+  margin-top: 0px;
+  padding-top: 0px;
+}
+
+.marpad-bot0{
+  margin-bottom: 0px;
+  padding-bottom: 0px;
 }
 
 .imgmargin {
   margin-left: 25px;
   margin-top: 25px;
 }
+.jumbopad0 {
 
+    padding: 2rem 1rem;
+    margin-bottom: 0px;
+    background-color: #e9ecef;
+    border-radius: 0.3rem;
+
+}
 
 
 .bg-main {
@@ -204,6 +217,9 @@ button{
   padding-top: 50px;
 }
 
+.bg{
+  background-color: black;
+}
 
 // Link to BS4
 @import "../node_modules/bootstrap/scss/bootstrap";
