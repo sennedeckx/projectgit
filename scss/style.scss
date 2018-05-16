@@ -66,6 +66,8 @@ button{
   cursor: pointer;
 }
 
+//woordanimatie Senne
+
 #woordAnimatie{
   -webkit-animation:scaling 8s ease 1 0s normal forwards;
 }
@@ -168,9 +170,9 @@ button{
 
 
 //403 ERROR
-#403 {
+.background403 {
   background-color: black;
-  background-image: url(../public_html/images/403.jpg);
+  background-image: url(../images/403.jpg);
   background-attachment: fixed;
   background-size: cover;
   background-position: center center;
@@ -179,9 +181,9 @@ button{
 }
 
 //404 ERROR
-#404 {
+.background404 {
   background-color: black;
-  background-image: url(../public_html/images/404.jpeg);
+  background-image: url(../images/404.jpeg);
   background-attachment: fixed;
   background-size: cover;
   background-position: center center;
@@ -189,7 +191,7 @@ button{
 
 }
 
-.error {
+    .error {
   font-family: 'Oswald', sans-serif;
   font-size: 65px;
   color: white;
@@ -201,6 +203,7 @@ button{
   text-align: center;
   padding-top: 50px;
 }
+
 
 // Link to BS4
 @import "../node_modules/bootstrap/scss/bootstrap";
