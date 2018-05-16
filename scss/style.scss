@@ -6,19 +6,39 @@ $theme-colors: (
 $main1: #1d24ab !default;
 $main2: #ffda10 !default;
 
-
+//borders
 .borderbottom {
   border-bottom: 3px solid $main1;
 }
 
+.borders{
+  border-bottom: 2px solid $main1;
+  border-top: 2px solid $main1;
+  border-left: 2px solid $main1;
+  border-right: 2px solid $main1;
+}
+
+.bordersextopbot
+{
+
+  border-left: 2px solid $main1;
+  border-right: 2px solid $main1;
+}
+
+
+//margins/paddings
 .marpad-top0{
   margin-top: 0px;
   padding-top: 0px;
 }
 
-.marpad-bot0{
-  margin-bottom: 0px;
-  padding-bottom: 0px;
+.marpad-bot5{
+  margin-bottom: 5px;
+  padding-bottom: 5px;
+}
+
+.paddingbot5{
+  padding-bottom: 5px;
 }
 
 .imgmargin {
@@ -34,7 +54,7 @@ $main2: #ffda10 !default;
 
 }
 
-
+//bg colors
 .bg-main {
   background-color: $main1 !important;
 }
@@ -46,7 +66,7 @@ $main2: #ffda10 !default;
   background-color: white !important;
 }
 
-
+//buttons
 .btn-outline-info {
   color: $main1 !important;
   background-color: transparent;
@@ -60,6 +80,11 @@ $main2: #ffda10 !default;
   border-color: $main1 !important;
 }
 
+button{
+  cursor: pointer;
+}
+
+//belgische vlag
 .Red {
   background-color: red;
   height: 25px;
@@ -75,9 +100,8 @@ $main2: #ffda10 !default;
   background-color: black;
   height: 25px;
 }
-button{
-  cursor: pointer;
-}
+
+
 
 //woordanimatie Senne
 
@@ -163,20 +187,6 @@ button{
     background-color: transparent;
     color: $main1;
   }
-}
-
-.borders{
-  border-bottom: 2px solid $main1;
-  border-top: 2px solid $main1;
-  border-left: 2px solid $main1;
-  border-right: 2px solid $main1;
-}
-
-.bordersextopbot
-{
-
-  border-left: 2px solid $main1;
-  border-right: 2px solid $main1;
 }
 
 
