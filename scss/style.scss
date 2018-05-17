@@ -7,11 +7,17 @@ $main1: skyblue !default;
 $main2: gray !default;
 
 //font
-.belgiefont{
+.whitefont{
+  color: white !important;
+}
+.font{
   font-family: 'Montserrat', sans-serif;
   color: black;
+}
 
-
+.animatiefont {
+  font-family: 'Permanent Marker', cursive;
+  color: white;
 }
 //borders
 .borderleft{
@@ -22,6 +28,9 @@ $main2: gray !default;
 }
 .borderbottom {
   border-bottom: 3px solid $main1;
+}
+.bordertop{
+  border-top: 3px solid $main1;
 }
 
 .borders{
@@ -38,9 +47,15 @@ $main2: gray !default;
   border-left: 2px solid $main1;
   border-right: 2px solid $main1;
 }
+//breekpunt
+@media (max-width:575px) {
+.imagesm{
 
+    max-width: 100%;
+    height: auto;
+}
 
-
+}
 //margins/paddings
 .margintop75{
   margin: 75px;
@@ -61,6 +76,10 @@ $main2: gray !default;
 
 .imgmargin {
   margin-left: 25px;
+  margin-top: 25px;
+}
+
+.margintopSennek{
   margin-top: 25px;
 }
 
@@ -97,7 +116,7 @@ $main2: gray !default;
 //bgimage
 
 .bg-image {
-  background-image: url("../images/pexels-photo-891683.jpg");
+  background-image: url("../images/abstract.jpg");
   background-attachment: fixed;
 }
 
@@ -120,24 +139,27 @@ button{
   cursor: pointer;
 }
 
-//belgische vlag
-.Red {
-  background-color: red;
-  height: 25px;
+.btn-reverted{
+  color: $main2!important;
+  background-color: transparent;
+  background-image: none;
+  border-color: $main2!important;
 }
 
-.yellow {
-  background-color: yellow;
-  height: 25px;
-
+.btn-reverted:hover {
+  color: $main1 !important;
+  background-color: $main2 !important;
+  border-color: $main2 !important;
 }
 
-.black {
-  background-color: black;
-  height: 25px;
+//hover link
+.whitehover{
+  color: white;
 }
 
-
+.whitehover:hover{
+  color: $main1;
+}
 
 //woordanimatie Senne
 
@@ -165,7 +187,7 @@ button{
   to {
     -webkit-transform: scale(2,3);
     background-color: transparent;
-    color: $main1;
+    color: white;
   }
 }
 
@@ -193,7 +215,7 @@ button{
   to {
     -moz-transform: scale(2,3);
     background-color: transparent;
-    color: $main1;
+    color: white;
   }
 }
 
@@ -221,7 +243,7 @@ button{
   to {
     -ms-transform: scale(2,3);
     background-color: transparent;
-    color: $main1;
+    color: white;
   }
 }
 
