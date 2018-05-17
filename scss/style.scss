@@ -3,19 +3,42 @@ $theme-colors: (
         'primary': #009CAB,
         'danger': #F04C25
 );
-$main1: #1d24ab !default;
-$main2: #ffda10 !default;
+$main1: skyblue !default;
+$main2: gray !default;
 
+//font
+.whitefont{
+  color: white !important;
+}
+.font{
+  font-family: 'Montserrat', sans-serif;
+  color: black;
+}
+
+.animatiefont {
+  font-family: 'Permanent Marker', cursive;
+  color: white;
+}
 //borders
+.borderleft{
+  border-left: 3px solid black;
+}
+.borderright{
+  border-right: 3px solid black;
+}
 .borderbottom {
   border-bottom: 3px solid $main1;
 }
+.bordertop{
+  border-top: 3px solid $main1;
+}
 
 .borders{
-  border-bottom: 2px solid $main1;
-  border-top: 2px solid $main1;
-  border-left: 2px solid $main1;
-  border-right: 2px solid $main1;
+  border-bottom: 2px solid gray;
+  border-top: 2px solid gray;
+  border-left: 2px solid gray;
+  border-right: 2px solid gray;
+
 }
 
 .bordersextopbot
@@ -24,12 +47,22 @@ $main2: #ffda10 !default;
   border-left: 2px solid $main1;
   border-right: 2px solid $main1;
 }
+//breekpunt
+@media (max-width:575px) {
+.imagesm{
 
+    max-width: 100%;
+    height: auto;
+}
 
+}
 //margins/paddings
-.marpad-top0{
-  margin-top: 0px;
-  padding-top: 0px;
+.margintop75{
+  margin: 75px;
+}
+
+.minimargintop{
+  margin-top: 25px;
 }
 
 .marpad-bot5{
@@ -45,12 +78,27 @@ $main2: #ffda10 !default;
   margin-left: 25px;
   margin-top: 25px;
 }
-.jumbopad0 {
 
-    padding: 2rem 1rem;
+.margintopSennek{
+  margin-top: 25px;
+}
+
+//aanpassingen
+.jumbopad1956 {
+
+    padding: 10px 1rem;
     margin-bottom: 0px;
     background-color: #e9ecef;
-    border-radius: 0.3rem;
+    border-radius: 0px;
+
+}
+
+.jumbopadbelgië {
+
+  padding: 20px 1rem;
+  margin-bottom: 0px;
+  background-color: #e9ecef;
+  border-radius: 0px;
 
 }
 
@@ -65,6 +113,13 @@ $main2: #ffda10 !default;
 .bg-white{
   background-color: white !important;
 }
+//bgimage
+
+.bg-image {
+  background-image: url("../images/abstract.jpg");
+  background-attachment: fixed;
+}
+
 
 //buttons
 .btn-outline-info {
@@ -84,24 +139,27 @@ button{
   cursor: pointer;
 }
 
-//belgische vlag
-.Red {
-  background-color: red;
-  height: 25px;
+.btn-reverted{
+  color: $main2!important;
+  background-color: transparent;
+  background-image: none;
+  border-color: $main2!important;
 }
 
-.yellow {
-  background-color: yellow;
-  height: 25px;
-
+.btn-reverted:hover {
+  color: $main1 !important;
+  background-color: $main2 !important;
+  border-color: $main2 !important;
 }
 
-.black {
-  background-color: black;
-  height: 25px;
+//hover link
+.whitehover{
+  color: white;
 }
 
-
+.whitehover:hover{
+  color: $main1;
+}
 
 //woordanimatie Senne
 
@@ -129,7 +187,7 @@ button{
   to {
     -webkit-transform: scale(2,3);
     background-color: transparent;
-    color: $main1;
+    color: white;
   }
 }
 
@@ -157,7 +215,7 @@ button{
   to {
     -moz-transform: scale(2,3);
     background-color: transparent;
-    color: $main1;
+    color: white;
   }
 }
 
@@ -185,7 +243,7 @@ button{
   to {
     -ms-transform: scale(2,3);
     background-color: transparent;
-    color: $main1;
+    color: white;
   }
 }
 
@@ -214,7 +272,7 @@ button{
 
 }
 
-    .error {
+.error {
   font-family: 'Oswald', sans-serif;
   font-size: 65px;
   color: white;
@@ -227,8 +285,15 @@ button{
   padding-top: 50px;
 }
 
-.bg{
-  background-color: black;
+//logoonepager
+.logoklein{
+  width: 50px;
+  height: 50px;
+}
+
+.nikshover a:hover{
+
+text-decoration: none !important;
 }
 
 // Link to BS4
