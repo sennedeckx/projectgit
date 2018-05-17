@@ -37,6 +37,12 @@ $main2: gray !default;
   border-right: 2px solid $main1;
 }
 
+//tabelopmaak
+.tabel table, th, td {
+  border: 2px solid $main1;
+  background-color: white;
+}
+
 //breekpunt
 @media (max-width: 575px) {
   .imagesm {
@@ -47,6 +53,16 @@ $main2: gray !default;
 
 }
 
+//counter
+body {
+  counter-reset: my-sec-counter;
+}
+
+.counter td::before {
+
+  counter-increment: my-sec-counter;
+  content: "Section " counter(my-sec-counter) ". ";
+}
 //margins/paddings
 .margintop75 {
   margin: 75px;
