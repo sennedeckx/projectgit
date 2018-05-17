@@ -27,9 +27,12 @@ $main2: #ffda10 !default;
 
 
 //margins/paddings
-.marpad-top0{
-  margin-top: 0px;
-  padding-top: 0px;
+.margintop75{
+  margin: 75px;
+}
+
+.minimargintop{
+  margin-top: 25px;
 }
 
 .marpad-bot5{
@@ -45,12 +48,23 @@ $main2: #ffda10 !default;
   margin-left: 25px;
   margin-top: 25px;
 }
-.jumbopad0 {
 
-    padding: 2rem 1rem;
+//aanpassingen
+.jumbopad1956 {
+
+    padding: 10px 1rem;
     margin-bottom: 0px;
     background-color: #e9ecef;
-    border-radius: 0.3rem;
+    border-radius: 0px;
+
+}
+
+.jumbopadbelgië {
+
+  padding: 20px 1rem;
+  margin-bottom: 0px;
+  background-color: #e9ecef;
+  border-radius: 0px;
 
 }
 
@@ -214,7 +228,7 @@ button{
 
 }
 
-    .error {
+.error {
   font-family: 'Oswald', sans-serif;
   font-size: 65px;
   color: white;
@@ -227,8 +241,15 @@ button{
   padding-top: 50px;
 }
 
-.bg{
-  background-color: black;
+//logoonepager
+.logoklein{
+  width: 50px;
+  height: 50px;
+}
+
+.nikshover a:hover{
+
+text-decoration: none !important;
 }
 
 // Link to BS4
