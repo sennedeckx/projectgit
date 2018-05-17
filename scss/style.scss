@@ -7,10 +7,8 @@ $main1: skyblue !default;
 $main2: gray !default;
 
 //font
-.whitefont{
-  color: white !important;
-}
-.font{
+
+.font {
   font-family: 'Montserrat', sans-serif;
   color: black;
 }
@@ -19,58 +17,51 @@ $main2: gray !default;
   font-family: 'Permanent Marker', cursive;
   color: white;
 }
+
 //borders
-.borderleft{
+.borderleft {
   border-left: 3px solid black;
 }
-.borderright{
+
+.borderright {
   border-right: 3px solid black;
 }
+
 .borderbottom {
   border-bottom: 3px solid $main1;
 }
-.bordertop{
-  border-top: 3px solid $main1;
-}
 
-.borders{
-  border-bottom: 2px solid gray;
-  border-top: 2px solid gray;
-  border-left: 2px solid gray;
-  border-right: 2px solid gray;
-
-}
-
-.bordersextopbot
-{
+.bordersextopbot {
 
   border-left: 2px solid $main1;
   border-right: 2px solid $main1;
 }
+
 //breekpunt
-@media (max-width:575px) {
-.imagesm{
+@media (max-width: 575px) {
+  .imagesm {
 
     max-width: 100%;
     height: auto;
-}
+  }
 
 }
+
 //margins/paddings
-.margintop75{
+.margintop75 {
   margin: 75px;
 }
 
-.minimargintop{
+.minimargintop {
   margin-top: 25px;
 }
 
-.marpad-bot5{
+.marpad-bot5 {
   margin-bottom: 5px;
   padding-bottom: 5px;
 }
 
-.paddingbot5{
+.paddingbot5 {
   padding-bottom: 5px;
 }
 
@@ -79,21 +70,13 @@ $main2: gray !default;
   margin-top: 25px;
 }
 
-.margintopSennek{
+.margintopSennek {
   margin-top: 25px;
 }
 
 //aanpassingen
-.jumbopad1956 {
 
-    padding: 10px 1rem;
-    margin-bottom: 0px;
-    background-color: #e9ecef;
-    border-radius: 0px;
-
-}
-
-.jumbopadbelgië {
+.jumbopad {
 
   padding: 20px 1rem;
   margin-bottom: 0px;
@@ -106,20 +89,21 @@ $main2: gray !default;
 .bg-main {
   background-color: $main1 !important;
 }
+
 .bg-main2 {
   background-color: $main2 !important;
 }
 
-.bg-white{
+.bg-white {
   background-color: white !important;
 }
+
 //bgimage
 
 .bg-image {
   background-image: url("../images/abstract.jpg");
   background-attachment: fixed;
 }
-
 
 //buttons
 .btn-outline-info {
@@ -135,15 +119,15 @@ $main2: gray !default;
   border-color: $main1 !important;
 }
 
-button{
+button {
   cursor: pointer;
 }
 
-.btn-reverted{
-  color: $main2!important;
+.btn-reverted {
+  color: $main2 !important;
   background-color: transparent;
   background-image: none;
-  border-color: $main2!important;
+  border-color: $main2 !important;
 }
 
 .btn-reverted:hover {
@@ -153,102 +137,96 @@ button{
 }
 
 //hover link
-.whitehover{
+.whitehover {
   color: white;
 }
 
-.whitehover:hover{
+.whitehover:hover {
   color: $main1;
 }
 
 //woordanimatie Senne
 
-#woordAnimatie{
-  -webkit-animation:scaling 8s ease 1 0s normal forwards;
+#woordAnimatie {
+  -webkit-animation: scaling 8s ease 1 0s normal forwards;
 }
 
 @-webkit-keyframes scaling {
 
   from {
   }
-  0%{
-    -webkit-transform:scale(0,0);
+  0% {
+    -webkit-transform: scale(0, 0);
   }
 
-  50%{
-    -webkit-transform: scale(1,1);
+  50% {
+    -webkit-transform: scale(1, 1);
   }
-
 
   100% {
-    -webkit-transform: scale(2,2);
+    -webkit-transform: scale(2, 2);
   }
 
   to {
-    -webkit-transform: scale(2,3);
+    -webkit-transform: scale(2, 3);
     background-color: transparent;
     color: white;
   }
 }
 
-#woordAnimatie{
-  -moz-animation:scaling 8s ease 1 0s normal;
+#woordAnimatie {
+  -moz-animation: scaling 8s ease 1 0s normal;
 }
 
 @-moz-keyframes scaling {
 
   from {
   }
-  0%{
-    -moz-transform:scale(0,0);
+  0% {
+    -moz-transform: scale(0, 0);
   }
 
-  50%{
-    -moz-transform: scale(1,1);
+  50% {
+    -moz-transform: scale(1, 1);
   }
-
 
   100% {
-    -moz-transform: scale(2,2);
+    -moz-transform: scale(2, 2);
   }
 
   to {
-    -moz-transform: scale(2,3);
+    -moz-transform: scale(2, 3);
     background-color: transparent;
     color: white;
   }
 }
 
-#woordAnimatie{
-  -ms-animation:scaling 8s ease 1 0s normal forwards;
+#woordAnimatie {
+  -ms-animation: scaling 8s ease 1 0s normal forwards;
 }
 
 @-ms-keyframes scaling {
 
   from {
   }
-  0%{
-    -ms-transform:scale(0,0);
+  0% {
+    -ms-transform: scale(0, 0);
   }
 
-  50%{
-    -ms-transform: scale(1,1);
+  50% {
+    -ms-transform: scale(1, 1);
   }
-
 
   100% {
-    -ms-transform: scale(2,2);
+    -ms-transform: scale(2, 2);
   }
 
   to {
-    -ms-transform: scale(2,3);
+    -ms-transform: scale(2, 3);
     background-color: transparent;
     color: white;
   }
 }
-
-
-
 
 //403 ERROR
 .background403 {
@@ -286,14 +264,14 @@ button{
 }
 
 //logoonepager
-.logoklein{
+.logoklein {
   width: 50px;
   height: 50px;
 }
 
-.nikshover a:hover{
+.nikshover a:hover {
 
-text-decoration: none !important;
+  text-decoration: none !important;
 }
 
 // Link to BS4

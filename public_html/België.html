@@ -19,7 +19,7 @@
 </head>
 <body class="bg-image font" id="top">
 
-<div class="jumbopadbelgië text-center bg-main2">
+<div class="jumbopad text-center bg-main2">
     <div class="animatiefont" id="woordAnimatie">België op het Eurovisiesongfestval</div>
 </div>
 <header>
@@ -32,13 +32,13 @@
             <span class="navbar-toggler-icon"></span>
         </button>
 
-        <div class="collapse navbar-collapse whitefont" id="navbarSupportedContent">
+        <div class="collapse navbar-collapse font" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item">
-                    <a class="nav-link" href="#">België <span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="België.html">België <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Winnaars</a>
+                    <a class="nav-link" href="Winnaars(A).html">Winnaars</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="2018.html">2018</a>
@@ -162,27 +162,19 @@
 <script src="js/bootstrap.bundle.min.js"></script>
 <script>
     $(document).ready(function () {
-        // Add smooth scrolling to all links
         $("a").on('click', function (event) {
-
-            // Make sure this.hash has a value before overriding default behavior
             if (this.hash !== "") {
-                // Prevent default anchor click behavior
                 event.preventDefault();
-
-                // Store hash
                 var hash = this.hash;
 
-                // Using jQuery's animate() method to add smooth page scroll
-                // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+
                 $('html, body').animate({
                     scrollTop: $(hash).offset().top
-                }, 800, function () {
+                }, 1000, function () {
 
-                    // Add hash (#) to URL when done scrolling (default click behavior)
                     window.location.hash = hash;
                 });
-            } // End if
+            }
         });
     });
 </script>
