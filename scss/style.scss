@@ -53,6 +53,15 @@ $main2: gray !default;
 
 }
 
+//transition
+.transition {
+  -webkit-transition: width 2s; /* Safari */
+  transition: ease 2s;
+}
+
+.transition:hover{
+  font-size: 75px;
+}
 //counter
 body {
   counter-reset: my-sec-counter;

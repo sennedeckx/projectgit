@@ -13,6 +13,9 @@
     <link rel="mask-icon" href="images/favicon/safari-pinned-tab.svg" color="#5bbad5">
     <meta name="msapplication-TileColor" content="#2d89ef">
     <meta name="theme-color" content="#ffffff">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet">
     <title>1956</title>
 </head>
 <body class="bg-image font" id="top">
@@ -50,6 +53,8 @@
     </nav>
 </header>
 <div class="container bordersextop">
+    <button id="fontchange" class="btn-info">Geen leuk font? klik hier! </button>
+    <button id="fontchangeRE" class="btn-info float-right">Origineel font, klik hier! </button>
     <div class="row">
 
 
@@ -241,6 +246,30 @@
     $(document).ready(function () {
         $('#anderkleur').on('click',function () {
             $('td').css({background: "gray",color:"white"});
+
+
+
+        });
+
+    });
+
+</script>
+<script >
+    $(document).ready(function () {
+        $('#fontchange').on('click',function () {
+            $('body').children().css({fontFamily:"Kaushan Script",fontSize:20});
+
+
+
+        });
+
+    });
+
+</script>
+<script >
+    $(document).ready(function () {
+        $('#fontchangeRE').on('click',function () {
+            $('body').children().css({fontSize:16, fontFamily:'Montserrat'});
 
 
 
